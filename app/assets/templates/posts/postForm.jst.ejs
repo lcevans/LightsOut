@@ -1,0 +1,22 @@
+<div class="errors"></div>
+
+<form>
+	<p>
+	  <label for="post_title">Title</label>
+	  <input 
+	    type="text"
+	    name="post[title]"
+	    value="<%= post.get("title")%>"
+	    id="post_title">
+	</p>
+	<p>
+	  <label for="post_body">Body</label>
+	  <input 
+	    type="text"
+	    name="post[body]"
+	    value="<%= post.get("body")%>"
+	    id="post_body">
+	</p>
+
+	<input type="submit" value="Submit">
+</form>
